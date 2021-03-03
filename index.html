@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="BST.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <title>Bin Tree</title>
+</head>
+<body>
+    <div style="text-align:center;padding:15px;">
+        <div>This is practice for tree nodes</div>
+        <div>click on node to remove it</div>
+        <div>click addValue to enter a set or random value</div>
+       <br />
+         <div>
+            <input type="number" id="NewValue" onkeydown="if (event.keyCode == 13) document.getElementById('AddValueButon').click()" /><input id="AddValueButon"  type="button" onclick="    a.addElementClick();" value="Add Value" />
+        </div>
+        <br/>
+        <div>
+            <div><label type="text" id="OutputLabel" style="width:100%;text-align:center;" />Stack Traversals</div>
+            <input value="PreOrder" type="button"  onclick="$('#OutputLabel').html(a.preOrder().join(' | '))" />
+            <input value="InOrder" type="button" onclick="$('#OutputLabel').html(a.inOrder().join(' | '))" />
+            <input value="ReverseOrder" type="button" onclick="$('#OutputLabel').html(a.reverseOrder().join(' | '))" />
+            <input value="PostOrder" type="button" onclick="$('#OutputLabel').html(a.postOrder().join(' | '))"  />
+        </div>
+        <br />
+        <div>
+            <div><label type="text" id="OutputLabel" style="width:100%;text-align:center;" />Queue Traversals</div>
+            <div>Coming Soon</div>
+
+        </div>
+    </div>
+    <div class="Tree"></div>
+
+</body>
+</html>
